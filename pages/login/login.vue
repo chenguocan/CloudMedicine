@@ -1,33 +1,34 @@
 <template>
 	<view class="login-interface">
-		<view class="head">
+		<HeadPage>
 			<navigator class="register">注册</navigator>
-			<!--logo-->
-			<view class="logo">
-				<image class="logo-img" src="../../static/images/logo.png"></image>
-			</view>
-		</view>
+		</HeadPage>		
 		<view class="login-block">
 			<!--登录表单-->
 			<form class="login-form">
 				<view class="telephone-item">
-					<i class="iconfont icon-yonghuquanxian"></i>
+					<i class="iconfont icon-user"></i>
 					<input type="text" class="telephone" placeholder="请输入手机号"  />
 				</view>
 				<view class="password-item">
-					<i class="iconfont icon-suo"></i>
+					<i class="iconfont icon-lock"></i>
 					<input type="text" class="password" placeholder="请输入密码" />	
+					<i class="iconfont icon-close-eye"></i>
 				</view>
 				<!--登录按钮-->
 				<button class="login">登录</button>
-				<navigator class="forgot">忘记密码?</navigator>
+				<navigator class="forgot" url="../register/register">忘记密码?</navigator>
 			</form>
 		</view>
 	</view>
 </template>
 
 <script>
+	import HeadPage from "@/components/HeadPage.vue";
 	export default {
+		components:{
+			HeadPage,
+		},
 		data() {
 			return {
 				
@@ -39,34 +40,18 @@
 	}
 </script>
 
-<style>
+<style scoped>
 /*头部背景-logo*/
 .login-interface{
 	height: 100%;
 }
-.login-interface>.head{
-	position: relative;
-}
-.login-interface>.head>.register{
+.login-interface .register{
 	position: absolute;
 	right: 70rpx;
 	top:60rpx;
 	color: white;
 }
-.login-interface>.head{
-	top:0;
-	height: 50%;
-	background-color: #b04b87;
-}
-.login-interface>.head>.logo{
-	display: flex;
-	justify-content: center;
-	padding-top:200rpx;
-}
-.login-interface>.head>.logo>.logo-img{
-	height: 140rpx;
-	width: 340rpx;
-}
+
 /*登录表单*/
 .login-block{
 	height: 50%;
@@ -94,13 +79,18 @@
 	padding:15rpx;
 }
 .telephone,.password{
-	margin-left: 20rpx;
+	margin:0 30rpx;
 	font-size: 14px;
 }
 .iconfont{
 	font-size: 26px;
 	color: #b04b87;
 	font-weight: bold;
+}
+.icon-close-eye{
+	display: block;
+	font-weight: normal;
+	color: gray;
 }
 .login{
 	width: 520rpx;
