@@ -73,6 +73,7 @@
 	margin:0 60rpx 0 60rpx;
 	color:#b04b87;
 	font-weight: bold;
+	white-space: nowrap;
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .form-item input{
@@ -85,6 +86,7 @@
 	background-color:#ea9a00;
 	color:white;
 	font-size: 12px;
+	white-space: nowrap;
 	margin-right: 70rpx;
 }
 .submitRegister{

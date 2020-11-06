@@ -1,0 +1,23 @@
+
+.head.data-v-39e61d6a{
+	position: relative;
+}
+.head.data-v-39e61d6a{
+	top:0;
+	height: 50%;
+	background-color: #b04b87;
+}
+.head>.logo.data-v-39e61d6a{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	padding-top:200rpx;
+}
+.head>.logo>.logo-img.data-v-39e61d6a{
+	height: 140rpx;
+	width: 340rpx;
+}
+

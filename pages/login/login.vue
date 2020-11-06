@@ -1,7 +1,7 @@
 <template>
 	<view class="login-interface">
 		<HeadPage>
-			<navigator class="register">注册</navigator>
+			<navigator class="register" url="../register/register">注册</navigator>
 		</HeadPage>		
 		<view class="login-block">
 			<!--登录表单-->
@@ -17,7 +17,7 @@
 				</view>
 				<!--登录按钮-->
 				<button class="login">登录</button>
-				<navigator class="forgot" url="../register/register">忘记密码?</navigator>
+				<navigator class="forgot">忘记密码?</navigator>
 			</form>
 		</view>
 	</view>
@@ -64,7 +64,6 @@
 	position: absolute;
 	width: 600rpx;
 	height: 460rpx;
-	margin:0 50rpx;
 	display: block;
 	border-radius: 3px;
 	box-shadow: 1px 1px 5px #818181;
