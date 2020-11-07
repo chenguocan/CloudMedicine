@@ -2,7 +2,12 @@
   "pages": [
     "pages/index/index",
     "pages/login/login",
-    "pages/register/register"
+    "pages/register/register",
+    "pages/videoCall/videoCall",
+    "pages/shop/shop",
+    "pages/home/home",
+    "pages/my/my",
+    "pages/homeDoctor/homeDoctor"
   ],
   "subPackages": [],
   "window": {
@@ -12,5 +17,5 @@
     "backgroundColor": "#F8F8F8"
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap5.json"
+  "sitemapLocation": "sitemap58.json"
 }

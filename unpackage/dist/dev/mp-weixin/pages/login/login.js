@@ -141,7 +141,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var HeadPage = function HeadPage() {__webpack_require__.e(/*! require.ensure | components/HeadPage */ "components/HeadPage").then((function () {return resolve(__webpack_require__(/*! @/components/HeadPage.vue */ 33));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var HeadPage = function HeadPage() {__webpack_require__.e(/*! require.ensure | components/HeadPage */ "components/HeadPage").then((function () {return resolve(__webpack_require__(/*! @/components/HeadPage.vue */ 70));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
