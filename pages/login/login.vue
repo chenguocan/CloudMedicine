@@ -16,7 +16,7 @@
 					<i class="iconfont icon-close-eye"></i>
 				</view>
 				<!--登录按钮-->
-				<button class="login">登录</button>
+				<button class="login" @click="toIndex">登录</button>
 				<navigator class="forgot">忘记密码?</navigator>
 			</form>
 		</view>
@@ -35,7 +35,11 @@
 			}
 		},
 		methods: {
-			
+			toIndex(){
+				uni.switchTab({
+					url:'../index/index'
+				})
+			}
 		}
 	}
 </script>

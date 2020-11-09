@@ -1,23 +1,22 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+		    "path" : "pages/login/login",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "登录",
+		        "enablePullDownRefresh": false,
+				"app-plus":{
+					"titleNView":"false"
+				}
+		    }
+		},
+		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "首页"
 			}
 		}
-	    ,{
-            "path" : "pages/login/login",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "登录",
-                "enablePullDownRefresh": false,
-				"app-plus":{
-					"titleNView":"false"
-				}
-            }
-            
-        }
         ,{
             "path" : "pages/register/register",
             "style" :                                                                                    
@@ -64,7 +63,7 @@
             
         }
     ],
-/* 	"tabBar":{
+ 	"tabBar":{
 		"color":"#333333",
 		"selectedColor": "#333333",
 		"backgroundColor": "#ffffff",
@@ -97,7 +96,7 @@
 				"text":"我的"
 			}
 		] 
-	}, */
+	}, 
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "西太云医",

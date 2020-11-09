@@ -1,11 +1,12 @@
 <template>
 	<view class="register">
 		<HeadPage></HeadPage>
+		
 		<view class="register-block">
 			<form class="register-form">
 				<view class="form-item">
 					<label for="telephone">手机号</label>
-					<input type="text" id="telephone" placeholder="请输入手机号"  />
+					<input type="text" id="telephone" placeholder="请输入手机号"    />
 				</view>
 				<view class="form-item">
 					<label for="name">姓名</label>
@@ -26,7 +27,7 @@
 				</view>
 			</form>
 		</view>
-		<button class="submitRegister">注册</button>
+		<button class="submitRegister" @click="toRegister">注册</button>
 	</view>
 </template>
 
@@ -38,11 +39,20 @@
 		},
 		data() {
 			return {
-				
+				telephone:'',
+				name:'',
+				idCard:'',
+				password:'',
+				code:'',
 			}
 		},
 		methods: {
-			
+			validator(){
+				
+			},
+			toRegister(){
+				
+			}
 		}
 	}
 </script>
