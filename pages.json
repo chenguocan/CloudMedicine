@@ -27,7 +27,9 @@
                 "navigationBarTitleText": "注册",
                 "enablePullDownRefresh": false,
 				"app-plus":{
-					"titleNView":"false"
+					"titleNView":{
+						"backgroundColor":"#b04b87"
+					}
 				}
             }
             
@@ -62,6 +64,22 @@
             {
                 "navigationBarTitleText": "家庭医生",
                 "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/healthmsg/physicalSigns/physicalSigns",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "体征测量",
+				
+                "enablePullDownRefresh": false,
+				"app-plus":{
+					"titleNView":{
+						"titleColor":"#e8d2df",
+						"backgroundColor":"#b04b87"
+					}
+				}
             }
             
         }

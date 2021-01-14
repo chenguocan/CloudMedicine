@@ -15,7 +15,7 @@
 			</view>
 		</view>
 		<view class="health-control">
-			<view class="control-list" v-for="(item,index) in controlList" :key="index">
+			<view class="control-list" v-for="(item,index) in controlList" :key="index" @click="tohealth(index)">
 				<image class="health-img" :src="item.image">
 				<text>{{item.title}}</text>
 			</view>
@@ -79,7 +79,13 @@
 
 		},
 		methods: {
-			
+			tohealth(index){
+				if(index===0){
+					uni.navigateTo({
+						url:"../healthmsg/physicalSigns/physicalSigns"
+					})
+				}
+			}
 		}
 	}
 </script>
@@ -167,7 +173,7 @@
 .symptom-desc{
 	width: 660rpx;
 	height: 185rpx;
-	margin-top: 30rpx;
+	margin-top: 50rpx;
 	display: flex;
 	.symptom-img{
 		width: 210rpx;
@@ -188,7 +194,7 @@
 		}
 		.symptom{
 			color:#959595;
-			font-size: 14rpx;
+			font-size: 24rpx;
 		}
 	}
 }
