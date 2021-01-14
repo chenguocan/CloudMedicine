@@ -14,7 +14,10 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "首页"
+				"navigationBarTitleText": "首页",
+				"app-plus":{
+					"titleNView":"false"
+				}
 			}
 		}
         ,{
@@ -67,7 +70,7 @@
 		"color":"#333333",
 		"selectedColor": "#333333",
 		"backgroundColor": "#ffffff",
-		"iconWidth":"30px",
+		"iconWidth":"25px",
 		"midButton":{
 			"width":"120px",
 			"height":"80px",

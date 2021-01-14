@@ -101,5 +101,8 @@
     },
     "uniStatistics" : {
         "enable" : false
+    },
+    "h5" : {
+        "title" : "西台云医"
     }
 }
