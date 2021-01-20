@@ -1,4 +1,7 @@
 {
+	"easycom": {
+			"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 		    "path" : "pages/login/login",
@@ -28,6 +31,7 @@
                 "enablePullDownRefresh": false,
 				"app-plus":{
 					"titleNView":{
+						"titleColor":"#e8d2df",
 						"backgroundColor":"#b04b87"
 					}
 				}
@@ -45,17 +49,26 @@
         },{
 			"path": "pages/shop/shop",
 			"style": {
-				"navigationBarTitleText": "商城"
+				"navigationBarTitleText": "商城",
+				"app-plus":{
+					"titleNView":"false"
+				}
 			}
 		},{
 			"path": "pages/home/home",
 			"style": {
-				"navigationBarTitleText": "家庭"
+				"navigationBarTitleText": "家庭",
+				"app-plus":{
+					"titleNView":"false"
+				}
 			}
 		},{
 			"path": "pages/my/my",
 			"style": {
-				"navigationBarTitleText": "我的"
+				"navigationBarTitleText": "我的",
+				"app-plus":{
+					"titleNView":"false"
+				}
 			}
 		}
         ,{
@@ -77,6 +90,64 @@
 				"app-plus":{
 					"titleNView":{
 						"titleColor":"#e8d2df",
+						"backgroundColor":"#b04b87"
+					}
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/video-push/video-push",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/xxx/xxx",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/liveRoom/liveRoom",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/healthmsg/diagnosis/diagnosis",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "专家诊疗",
+                "enablePullDownRefresh": false,
+				"app-plus":{
+					"titleNView":{
+						"titleColor":"#ffffff",
+						"backgroundColor":"#b04b87"
+					}
+				}
+				
+            }
+            
+        }
+        ,{
+            "path" : "pages/healthmsg/order/order",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "选择科室",
+                "enablePullDownRefresh": false,
+				"app-plus":{
+					"titleNView":{
+						"titleColor":"#ffffff",
 						"backgroundColor":"#b04b87"
 					}
 				}

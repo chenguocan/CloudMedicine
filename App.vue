@@ -18,10 +18,13 @@
 
 </script>
 
-<style>
-		@import url("/static/icon/iconfont.css");
-page{
-	height: 100%;
-	width: 100%;
-}
+<style lang="scss">
+	/* #ifndef APP-PLUS-NVUE */
+	@import "uview-ui/index.scss";
+	@import url("/static/iconfont/iconfont.css");
+	page{
+		height: 100%;
+		width: 100%;
+	}
+	/* #endif */
 </style>

@@ -1,5 +1,6 @@
 <template>
-	<view class="content">
+	<view class="content" @click="xxx">
+		视频
 	</view>
 </template>
 
@@ -14,7 +15,11 @@
 			
 		},
 		methods: {
-			
+			xxx(){
+				uni.navigateTo({
+					url:'../xxx/xxx'
+				})
+			}
 		}
 }
 </script>

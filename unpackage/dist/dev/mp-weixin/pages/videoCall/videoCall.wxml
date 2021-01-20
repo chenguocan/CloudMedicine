@@ -1,1 +1,0 @@
-<view class="content"><button type="primary" plain="true" data-event-opts="{{[['tap',[['showVideoCall']]]]}}" bindtap="__e">开启视频呼叫</button><button type="primary" plain="true" data-event-opts="{{[['tap',[['showComingVideoCall']]]]}}" bindtap="__e">开启视频接听/挂断通话</button></view>

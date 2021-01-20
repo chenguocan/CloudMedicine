@@ -22,7 +22,7 @@
 		</view>
 		<view class="health-measure">
 			<view class="measure-list"  >
-				<view class="measure-item" v-for="(item,index) in measureList" :key="index">
+				<view class="measure-item" v-for="(item,index) in measureList" :key="index" @click="toTreatOrMsg(index)">
 					<image class="health-img" :src="item.image">
 					<text>{{item.title}}</text>
 				</view>
@@ -85,6 +85,13 @@
 						url:"../healthmsg/physicalSigns/physicalSigns"
 					})
 				}
+			},
+			toTreatOrMsg(index){
+				if(index===0){
+					uni.navigateTo({
+						url:'../healthmsg/diagnosis/diagnosis'
+					})
+				}
 			}
 		}
 	}
@@ -97,7 +104,7 @@
 	height: 450rpx;
 	.header-option{
 		position: relative;
-		padding-top: 50rpx;
+		padding-top: 80rpx;
 		display:flex;
 		align-items: center;
 		.position{
